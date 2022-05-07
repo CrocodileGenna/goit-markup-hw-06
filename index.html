@@ -425,10 +425,48 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="close" data-modal-close>
-        <span class="icon-close">
-          X
-        </span>
+        X
       </button>
+      <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+      <form>
+        <svg class="modal-svg">
+          <use href="./images/Vector-modal.svg"></use>
+        </svg>
+        <input 
+          type="text"
+          name="user-name"
+          placeholder="Name"
+          class="modal-imput" 
+          required 
+        />
+        <svg class="modal-svg">
+          <use href="./images/Vector-modal.svg"></use>
+        </svg>
+        <input 
+          type="text"
+          name="user-email"
+          placeholder="email"
+          class="modal-imput" 
+        />
+        <svg class="modal-svg">
+          <use href="./images/Vector-modal.svg"></use>
+        </svg>
+        <input 
+          type="text"
+          name="user-tel"
+          placeholder="tel"
+          class="modal-imput" 
+          required 
+        />
+        <input 
+          type="text"
+          name="Оставьте ваш коментакий"
+          placeholder="text"
+          class="modal-imput-t"
+        />
+        <p class="modal-consent">Соглашаюсь с рассылкой и принимаю <a>Условия договора</a></p>
+        <button type="submit" class="modal-submit">Отправить</button>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
