@@ -429,42 +429,55 @@
       </button>
       <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
       <form>
-        <svg class="modal-svg">
+        <label class="modal-label">Имя
+        <!-- <svg class="modal-svg">
           <use href="./images/Vector-modal.svg"></use>
-        </svg>
+        </svg> -->
         <input 
           type="text"
           name="user-name"
-          placeholder="Name"
+          placeholder="Как к вам обращаться "
           class="modal-imput" 
+          minlength="3"
           required 
         />
-        <svg class="modal-svg">
+        </label>
+        <label class="modal-label">Телефон
+        <!-- <svg class="modal-svg">
           <use href="./images/Vector-modal.svg"></use>
-        </svg>
-        <input 
-          type="text"
-          name="user-email"
-          placeholder="email"
-          class="modal-imput" 
-        />
-        <svg class="modal-svg">
-          <use href="./images/Vector-modal.svg"></use>
-        </svg>
+        </svg> -->
         <input 
           type="text"
           name="user-tel"
-          placeholder="tel"
+          placeholder="099 999 99 99"
           class="modal-imput" 
+          minlength="10"
           required 
         />
+        </label>
+        <label class="modal-label">Почта
+        <!-- <svg class="modal-svg">
+          <use href="./images/Vector-modal.svg"></use>
+        </svg> -->
         <input 
           type="text"
-          name="Оставьте ваш коментакий"
-          placeholder="text"
-          class="modal-imput-t"
+          name="user-email"
+          placeholder="abcdefg@gmail.com (Не обязательно)"
+          class="modal-imput" 
         />
-        <p class="modal-consent">Соглашаюсь с рассылкой и принимаю <a>Условия договора</a></p>
+        </label>
+        <div class="modal-coment">
+          <label class="modal-label" name="user-text">Комментарий</label>
+          <textarea 
+            name="user-text"
+            placeholder="Введите текст"
+            class="modal-imput-t"
+            id="user-text"></textarea>
+        </div>
+        <div class="modal-coment-checkbox">
+          <input type="checkbox" name="checkbox" class="checkbox"/>
+          <p class="modal-consent">Соглашаюсь с рассылкой и принимаю <a href="/">Условия договора</a>.</p>
+        </div>
         <button type="submit" class="modal-submit">Отправить</button>
       </form>
     </div>
