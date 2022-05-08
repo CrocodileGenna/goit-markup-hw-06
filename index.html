@@ -362,9 +362,7 @@
   <footer>
     <div class="footer conteiner">
       <adress>
-        <a href="./images/webStudio.jpg" class="logo">
-          Web
-          <span class="footer-studio">Studio</span>
+        <a href="./images/webStudio.jpg" class="logo">Web<span class="footer-studio">Studio</span>
         </a>
 
         <ul class="list nav">
@@ -429,8 +427,11 @@
             placeholder="E-mail"
             class="dewdrop-input" 
           />
-          <button id="user-email-dwd" type="submit" class="btn-dewdrop">
+          <button type="submit" class="btn-dewdrop">
             ПОДПИСАТЬСЯ
+            <svg class="icon-send">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
           </button>
       </div>
       </div>
@@ -444,22 +445,22 @@
       <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
       <form>
         <label class="modal-label">Имя
-        <!-- <svg class="modal-svg">
-          <use href="./images/Vector-modal.svg"></use>
-        </svg> -->
+        <svg class="modal-svg">
+          <use href="./images/icons.svg#icon-Vector-modal"></use>
+        </svg>
         <input 
           type="text"
           name="user-name"
-          placeholder="Как к вам обращаться "
+          placeholder=""
           class="modal-imput" 
           minlength="3"
           required 
         />
         </label>
         <label class="modal-label">Телефон
-        <!-- <svg class="modal-svg">
-          <use href="./images/Vector-modal.svg"></use>
-        </svg> -->
+        <svg class="modal-svg">
+          <use href="./images/icons.svg#icon-Vector-modal1"></use>
+        </svg>
         <input 
           type="text"
           name="user-tel"
@@ -470,9 +471,9 @@
         />
         </label>
         <label class="modal-label">Почта
-        <!-- <svg class="modal-svg">
-          <use href="./images/Vector-modal.svg"></use>
-        </svg> -->
+        <svg class="modal-svg">
+          <use href="./images/icons.svg#icon-Vector-modal2"></use>
+        </svg>
         <input 
           type="text"
           name="user-email"
@@ -481,7 +482,7 @@
         />
         </label>
         <div class="modal-coment">
-          <label class="modal-label" name="user-text">Комментарий</label>
+          <label class="modal-label" for="user-text" name="user-text">Комментарий</label>
           <textarea 
             name="user-text"
             placeholder="Введите текст"
