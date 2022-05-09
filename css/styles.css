@@ -1000,15 +1000,15 @@ footer {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal .close:hover {
+  color: var(--akcent);
+}
 .close-svg {
-  fill: black;
-
   text-align: center;
-
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 .close-svg:hover {
-  fill: var(--akcent);
+  fill: currentColor;
 }
 
 .modal-title {
@@ -1046,7 +1046,7 @@ footer {
   width: 15px;
   height: 15px;
 
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 .modal-imput {
   display: flex;
