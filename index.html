@@ -428,7 +428,7 @@
             class="dewdrop-input" 
           />
           <button type="submit" class="btn-dewdrop">
-            ПОДПИСАТЬСЯ
+            Подписаться
             <svg class="icon-send">
               <use href="./images/icons.svg#icon-icon-send"></use>
             </svg>
@@ -440,47 +440,63 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="close" data-modal-close>
-        X
+        <svg class="close-svg" width="11" height="11">
+          <use href="./images/icons.svg#icon-Close"></use>
+        </svg>
       </button>
       <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
       <form>
-        <label class="modal-label">Имя
-        <svg class="modal-svg">
-          <use href="./images/icons.svg#icon-Vector-modal"></use>
-        </svg>
-        <input 
-          type="text"
-          name="user-name"
-          placeholder=""
-          class="modal-imput" 
-          minlength="3"
-          required 
-        />
-        </label>
-        <label class="modal-label">Телефон
-        <svg class="modal-svg">
-          <use href="./images/icons.svg#icon-Vector-modal1"></use>
-        </svg>
-        <input 
-          type="text"
-          name="user-tel"
-          placeholder="099 999 99 99"
-          class="modal-imput" 
-          minlength="10"
-          required 
-        />
-        </label>
-        <label class="modal-label">Почта
-        <svg class="modal-svg">
-          <use href="./images/icons.svg#icon-Vector-modal2"></use>
-        </svg>
-        <input 
-          type="text"
-          name="user-email"
-          placeholder="abcdefg@gmail.com (Не обязательно)"
-          class="modal-imput" 
-        />
-        </label>
+        <div class="modal-div1">
+        <label class="modal-label" for="user-name">Имя</label>
+        <div class="modal-div2">
+          <input 
+            type="text"
+            name="user-name"
+            placeholder=""
+            class="modal-imput" 
+            minlength="3"
+            id="user-name"
+            required 
+          />
+          <svg class="modal-svg">
+            <use href="./images/icons.svg#icon-Vector-modal"></use>
+          </svg>
+        </div>
+        </div>
+        <div class="modal-div1">
+          <label class="modal-label" for="user-tel">Телефон</label>
+          <div class="modal-div2">
+            <input 
+              type="text"
+              name="user-tel"
+              placeholder=""
+              class="modal-imput" 
+              minlength="10"
+              id="user-tel"
+              required 
+            />
+            <svg class="modal-svg">
+              <use href="./images/icons.svg#icon-Vector-modal1"></use>
+            </svg>
+          </div>
+          </div>
+        <div class="modal-div1">
+          <label class="modal-label" for="user-email">Почта</label>
+          <div class="modal-div2">
+            <input 
+              type="text"
+              name="user-email"
+              placeholder=""
+              class="modal-imput" 
+              minlength="3"
+              id="user-email"
+              required 
+            />
+            <svg class="modal-svg">
+              <use href="./images/icons.svg#icon-Vector-modal2"></use>
+            </svg>
+          </div>
+          </div>
         <div class="modal-coment">
           <label class="modal-label" for="user-text" name="user-text">Комментарий</label>
           <textarea 
@@ -490,8 +506,8 @@
             id="user-text"></textarea>
         </div>
         <div class="modal-coment-checkbox">
-          <input type="checkbox" name="checkbox" class="checkbox"/>
-          <p class="modal-consent">Соглашаюсь с рассылкой и принимаю <a href="/">Условия договора</a>.</p>
+          <input type="checkbox" name="checkbox" class="checkbox" id="checkbox"/>
+          <label for="checkbox" class="modal-consent">Соглашаюсь с рассылкой и принимаю <a href="/">Условия договора</a>.</label>
         </div>
         <button type="submit" class="modal-submit">Отправить</button>
       </form>
