@@ -983,11 +983,11 @@ footer {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-}
+} */
 
 .modal .close {
   position: absolute;
@@ -1119,6 +1119,8 @@ footer {
 
   width: 16px;
   height: 16px;
+
+  opacity: 0;
 }
 
 .modal-consent {
@@ -1143,12 +1145,12 @@ footer {
 
   padding: 2px;
   border-radius: 2px;
-  outline: 1px solid black;
+  border: 1px solid black;
 }
 
 .checkbox:checked + .modal-consent::before {
+  border: none;
   background-color: var(--akcent);
-  border: var(--akcent);
   background-image: url(../images/icons.svg#icon-Checkbox);
   background-position: center;
   background-repeat: no-repeat;
