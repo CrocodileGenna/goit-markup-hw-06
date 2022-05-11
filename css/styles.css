@@ -983,11 +983,11 @@ footer {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-} */
+}
 
 .modal .close {
   position: absolute;
