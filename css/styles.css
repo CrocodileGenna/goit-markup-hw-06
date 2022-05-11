@@ -1002,6 +1002,7 @@ footer {
 }
 .modal .close:hover {
   color: var(--akcent);
+  border: none;
 }
 .close-svg {
   text-align: center;
@@ -1034,18 +1035,7 @@ footer {
 .modal-div2 {
   position: relative;
 }
-.modal-svg {
-  position: absolute;
 
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-
-  width: 15px;
-  height: 15px;
-
-  /* outline: 1px solid tomato; */
-}
 .modal-imput {
   display: flex;
 
@@ -1064,6 +1054,18 @@ footer {
 .modal-imput:hover,
 .modal-imput:focus {
   border: 1px solid var(--akcent);
+}
+.modal-svg {
+  position: absolute;
+
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 15px;
+  height: 15px;
+
+  /* outline: 1px solid tomato; */
 }
 
 .modal-imput-t {
@@ -1131,14 +1133,14 @@ footer {
   padding: 2px;
   border-radius: 2px;
   outline: 1px solid black;
-
-  background-image: url(../images/icons.svg#icon-Vector-1);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .checkbox:checked + .modal-consent::before {
   background-color: var(--akcent);
+  border: var(--akcent);
+  background-image: url(../images/icons.svg#icon-Checkbox);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .modal-consent a {
