@@ -1005,9 +1005,6 @@ footer {
 }
 .close-svg {
   text-align: center;
-  /* outline: 1px solid tomato; */
-}
-.close-svg:hover {
   fill: currentColor;
 }
 
