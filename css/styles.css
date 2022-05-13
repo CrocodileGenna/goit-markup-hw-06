@@ -34,6 +34,7 @@ b {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 .visually-hidden {
@@ -232,7 +233,6 @@ header {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--primary-wite-color);
-  border-color: var(--akcent);
   background-color: var(--akcent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -918,7 +918,6 @@ footer {
   line-height: 1.9;
 
   color: var(--primary-wite-color);
-  border-color: var(--akcent);
   background-color: var(--akcent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -1060,6 +1059,7 @@ footer {
 
   width: 448px;
   height: 40px;
+  outline: none;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1068,13 +1068,20 @@ footer {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .modal-imput::placeholder {
+
+/* .modal-imput::placeholder { 
   color: var(--akcent);
 } */
+
 .modal-imput:hover,
 .modal-imput:focus {
   border: 1px solid var(--akcent);
 }
+.modal-imput:hover + .modal-svg,
+.modal-imput:focus + .modal-svg {
+  fill: var(--akcent);
+}
+
 .modal-svg {
   position: absolute;
 
@@ -1101,6 +1108,7 @@ footer {
   letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
 
   resize: none;
 
@@ -1161,7 +1169,7 @@ footer {
 .checkbox:checked + .modal-consent::before {
   border: none;
   background-color: var(--akcent);
-  background-image: url(../images/icons.svg#icon-Checkbox);
+  background-image: url(../images/checkbox.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1195,7 +1203,6 @@ footer {
   line-height: 1.9;
 
   color: var(--primary-wite-color);
-  border-color: var(--akcent);
   background-color: var(--akcent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
